@@ -53,7 +53,7 @@ def getUnverifiedXs():
         atag = getTag()
         images.append({
             "id": imageID,
-            "imageUrl": f"http://localhost:5000/imagebucket/{image}",
+            "imageUrl": f"http://localhost:8788/imagebucket/{image}",
             "tag": atag
         })
         imageID += 1
@@ -80,7 +80,7 @@ def getUnverifiedYs():
         atag = getTag()
         images.append({
             "id": imageID,
-            "imageUrl": f"http://localhost:5000/imagebucket/{image}",
+            "imageUrl": f"http://localhost:8788/imagebucket/{image}",
             "tag": atag
         })
         imageID += 1
