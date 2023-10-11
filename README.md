@@ -8,4 +8,6 @@ To launch debug server at local port 8788 in Windows, first:
 
 (3) navigate to Scripts directory
 
+note: you may have to install dotenv with cmd: pip install dotenv
+
 (4) cmd: flask run
