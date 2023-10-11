@@ -1,7 +1,11 @@
 # Senior-Cap_ServerClient-
 
 To launch debug server at local port 8788 in Windows, first:
-create a virtual environment at the root folder
-cmd: pip install flask
-navigate to Scripts directory
-cmd: flask run
+
+(1) create a virtual environment at the root folder
+
+(2) cmd: pip install flask
+
+(3) navigate to Scripts directory
+
+(4) cmd: flask run
