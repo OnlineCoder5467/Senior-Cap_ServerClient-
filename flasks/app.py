@@ -95,3 +95,23 @@ def updateUnverified():
 
 if __name__ == "__main__":
   app.run()
+
+@app.route("/signupAdmin")
+def signupAdmin():
+  return ""
+
+@app.route("/signinAdmin")
+def signinAdmin():
+  return ""
+
+@app.route("/signoutAdmin")
+def signoutAdmin():
+  return ""
+
+@app.route("/trainModel")
+def trainModel():
+  return ""
+
+@app.route("/updateAndArchiveModel")
+def updateAndArchiveModel():
+  return ""
