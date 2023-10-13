@@ -43,6 +43,7 @@ def checkModelVersion():
 def downloadModel():
   return "Downloading model #_____"
 
+
 #returns sample json of newly uploaded objects for admin review
 @app.route("/getUniverifiedXs")
 def getUnverifiedXs():
@@ -57,12 +58,12 @@ def getUnverifiedXs():
             "tag": atag
         })
         imageID += 1
-
     response_data = {
         "imageCount": len(images),
         "images": images
     }        
     return jsonify(response_data)
+
 
 def getTag():
   if (random.randint(1, 2) == 1):
@@ -74,8 +75,7 @@ def getTag():
 @app.route("/getUniverifiedYs")
 def getUnverifiedYs():
     images = []
-    imageID = 0
-    
+    imageID = 0    
     for image in os.listdir(UNVERIFIED_BUCKET):
         atag = getTag()
         images.append({
@@ -91,27 +91,31 @@ def getUnverifiedYs():
 def updateUnverified():
    return "Success"
 
-   
-
-if __name__ == "__main__":
-  app.run()
 
 @app.route("/signupAdmin")
 def signupAdmin():
-  return ""
+  return "Hey New Admin"
+
 
 @app.route("/signinAdmin")
 def signinAdmin():
-  return ""
+  return "Admin signed in"
+
 
 @app.route("/signoutAdmin")
 def signoutAdmin():
-  return ""
+  return "Signed out Admin"
+
 
 @app.route("/trainModel")
 def trainModel():
-  return ""
+  return "Training"   
+
 
 @app.route("/updateAndArchiveModel")
 def updateAndArchiveModel():
-  return ""
+  return "New Model Up"
+
+
+if __name__ == "__main__":
+  app.run()
