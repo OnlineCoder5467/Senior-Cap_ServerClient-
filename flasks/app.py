@@ -143,7 +143,8 @@ def updateAndArchiveModel():
 
 if __name__ == '__main__':
   getInitialData()
-  app.run(host='0.0.0.0', port=81)
+  app.run()
+
 '''THIS FUNCTION RETURNS A JSON WITH IMAGE COUNT AND ALL IMAGES FROM LOCAL FOLDER
 #returns sample json of newly uploaded objects for admin review
 @app.route("/getUnverifiedXs")
